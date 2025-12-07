@@ -50,8 +50,8 @@ if __name__ == "__main__":
     print("PRUEBA DE LA CLASE TRAMITE CEDULA")
     print("=" * 60)
 
-    # ✅ Prueba 1: Crear cédulas válidas
-    print("\n✅ Creando trámites de cédula válidos:")
+    #  Prueba 1: Crear cédulas válidas
+    print("\n Creando trámites de cédula válidos:")
     try:
         c1 = TramiteCedula("Cédula nueva", 50, False)
         print(f"   {c1}")
@@ -62,17 +62,17 @@ if __name__ == "__main__":
         c3 = TramiteCedula("Cédula por pérdida", 50, False)
         print(f"   {c3}")
     except ValueError as e:
-        print(f"   ❌ Error: {e}")
+        print(f"    Error: {e}")
 
-    # ❌ Prueba 2: Valor no booleano
-    print("\n❌ Prueba con valor no booleano:")
+    #  Prueba 2: Valor no booleano
+    print("\n Prueba con valor no booleano:")
     try:
         c4 = TramiteCedula("Cédula inválida", 50, "si")
     except ValueError as e:
         print(f"   Error capturado correctamente: {e}")
 
-    # ✅ Prueba 3: Verificar descuento en renovación
-    print("\n✅ Verificando descuento del 20% en renovación:")
+    #  Prueba 3: Verificar descuento en renovación
+    print("\n Verificando descuento del 20% en renovación:")
     cedulas = [
         TramiteCedula("Primera vez - Base $50", 50, False),
         TramiteCedula("Renovación - Base $50", 50, True),
