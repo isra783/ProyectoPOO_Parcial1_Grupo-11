@@ -72,4 +72,3 @@ if __name__ == "__main__":
     c4 = Ciudadano("123456789a", "María Torres")
     c5 = Ciudadano("12-3456789", "Luis Ramírez")
     c6 = Ciudadano("", "Carlos Ruiz")
-
