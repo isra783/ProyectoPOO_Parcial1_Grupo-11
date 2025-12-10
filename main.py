@@ -35,11 +35,10 @@ def main():
             print("\n--- Registro de ciudadano ---")
             try:
                 cedula = input("Ingrese cédula (10 dígitos): ").strip()
-                nombre = input("Ingrese nombre: ").strip()
+                nombre = input("Ingrese apellido y nombre: ").strip()
 
                 ciudadano = Ciudadano(cedula, nombre)
                 ciudadanos.append(ciudadano)
-
                 print(f" Ciudadano registrado: {ciudadano}\n")
             except ValueError as e:
                 print(f" Error: {e}\n")
@@ -66,7 +65,7 @@ def main():
 
 
 
-                costo = float(input("Costo base (ej: 50): ").strip())
+                costo = float(input("valor a cobrar (ej: 50): ").strip())
 
                 print("\nTipo de trámite:")
                 print("1. Primera vez")
@@ -98,7 +97,7 @@ def main():
             print("\n--- Crear Permiso de Funcionamiento ---")
             try:
                 descripcion = input("Descripción del negocio: 'ejemplo ; Pasteleria ").strip()
-                costo = float(input("Costo base (ej: 100): ").strip())
+                costo = float(input("valor a cobrar (ej: 100): ").strip())
 
                 print("\nTipo de negocio:")
                 print("1. Comercial (+$50)")
@@ -174,4 +173,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
